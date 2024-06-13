@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themed To-Do App</title>
+    <link id="theme-style" rel="stylesheet" href="light-theme.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="switchTheme('light')">Light Theme</button>
+        <button onclick="switchTheme('dark')">Dark Theme</button>
+        <h1>To-Do List</h1>
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <h2>Tasks</h2>
+        <ul id="taskList"></ul>
+        <h2>Completed Tasks</h2>
+        <ul id="completedTaskList"></ul>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
